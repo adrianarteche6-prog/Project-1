@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Awareness Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+        .box {
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        /* Link styled like a button */
+        .link-btn {
+            display: inline-block;
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .link-btn:hover {
+            background-color: #286090;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>⚠️ Security Alert</h1>
+    <p>
+        Your account may require verification.
+        Please check your account security.
+    </p>
+
+    <!-- ✅ CLICKABLE LINK -->
+    <a href="#message" class="link-btn" onclick="showWarning()">Verify Account</a>
+
+    <div id="message">
+        <h2>🎓 Simulation!</h2>
+        <p>This was only a phishing-awareness simulation.</p>
+        <p>No password or personal information was collected.</p>
+        <strong>Always check links and verify messages before clicking.</strong>
+    </div>
+</div>
+
+<script>
+function showWarning() {
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
